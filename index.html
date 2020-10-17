@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olly Burjan">
+    <meta name="description" content="Countries Info, Data">
+    <title>Countries Data</title>
+</head>
+
+<body>
+
+    <h1>GeoNames API's</h1>
+    <br>
+    <label for="long">longtitude (between -180 & 180)<br></label>
+    <input id="long" name="long" type="number" min="-180" max="180" placeholder="between -180 & 180"><br>
+    <label for="lat">latitude (between -90 & 90)<br></label>
+    <input id="lat" name="lat" type="number" min="-90" max="90" placeholder="between -90 & 90">
+    <table>
+        <thead>
+            <tr>
+                <th>API name</th>
+                <th>API description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--API 1-->
+            <tr>
+                <td>Country Code</td>
+                <td>Will give you a country code from longtitude and latitude</td>
+                <td><button id="btn1">Submit</button></td>
+            </tr>
+            <!--API 2-->
+            <tr>
+                <td>Nearby Postal Codes</td>
+                <td>Will give you a list of postal codes near co-ordinates</td>
+                <td><button id="btn2">Submit</button></td>
+            </tr>
+            <!--API 3-->
+            <tr>
+                <td>Nearby Place Name</td>
+                <td>Finds the nearest populated place by lat & long</td>
+                <td><button id="btn3">Submit</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Results</h2>
+    <h3>Country Code: <p id="ccresult"></p>
+    </h3><br>
+    <h3>Nearby PostCode: </h3>
+    <p id=pcresult></p><br>
+    <h3>Nearest Populated Place: </h3>
+    <p id="ppresult"></p>
+
+    <script type="application/javascript" src="libs/javaScript/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/javaScript/script.js"></script>
+</body>
+
+</html>
